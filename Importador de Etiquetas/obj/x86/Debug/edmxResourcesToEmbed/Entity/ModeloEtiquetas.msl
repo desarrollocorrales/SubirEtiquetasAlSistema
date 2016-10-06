@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EtiquetasModelStoreContainer" CdmEntityContainer="EtiquetasEntities">
+    <EntitySetMapping Name="catalog_comandos_etiquetas">
+      <EntityTypeMapping TypeName="EtiquetasModel.catalog_comandos_etiquetas">
+        <MappingFragment StoreEntitySet="catalog_comandos_etiquetas">
+          <ScalarProperty Name="id_comando" ColumnName="id_comando" />
+          <ScalarProperty Name="etiqueta" ColumnName="etiqueta" />
+          <ScalarProperty Name="comando" ColumnName="comando" />
+          <ScalarProperty Name="imagen_etiqueta" ColumnName="imagen_etiqueta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

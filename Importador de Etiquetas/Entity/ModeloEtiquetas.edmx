@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="EtiquetasModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.6" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="EtiquetasModelStoreContainer">
+          <EntitySet Name="catalog_comandos_etiquetas" EntityType="EtiquetasModel.Store.catalog_comandos_etiquetas" store:Type="Tables" Schema="seguimiento_friolala" />
+        </EntityContainer>
+        <EntityType Name="catalog_comandos_etiquetas">
+          <Key>
+            <PropertyRef Name="id_comando" />
+          </Key>
+          <Property Name="id_comando" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="etiqueta" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="comando" Type="text" Nullable="false" />
+          <Property Name="imagen_etiqueta" Type="longblob" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="EtiquetasModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="EtiquetasEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="catalog_comandos_etiquetas" EntityType="EtiquetasModel.catalog_comandos_etiquetas" />
+        </EntityContainer>
+        <EntityType Name="catalog_comandos_etiquetas">
+          <Key>
+            <PropertyRef Name="id_comando" />
+          </Key>
+          <Property Name="id_comando" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="etiqueta" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="comando" Type="String" Nullable="false" MaxLength="65535" Unicode="false" FixedLength="false" />
+          <Property Name="imagen_etiqueta" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="EtiquetasModelStoreContainer" CdmEntityContainer="EtiquetasEntities">
+          <EntitySetMapping Name="catalog_comandos_etiquetas">
+            <EntityTypeMapping TypeName="EtiquetasModel.catalog_comandos_etiquetas">
+              <MappingFragment StoreEntitySet="catalog_comandos_etiquetas">
+                <ScalarProperty Name="id_comando" ColumnName="id_comando" />
+                <ScalarProperty Name="etiqueta" ColumnName="etiqueta" />
+                <ScalarProperty Name="comando" ColumnName="comando" />
+                <ScalarProperty Name="imagen_etiqueta" ColumnName="imagen_etiqueta" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="ModeloEtiquetas">
+        <EntityTypeShape EntityType="EtiquetasModel.catalog_comandos_etiquetas" Width="1.5" PointX="0.5" PointY="0.5" Height="1.787985026041667" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

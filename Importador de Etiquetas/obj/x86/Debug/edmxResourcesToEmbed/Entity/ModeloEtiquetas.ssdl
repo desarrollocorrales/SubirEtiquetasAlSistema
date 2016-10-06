@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EtiquetasModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.6" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="EtiquetasModelStoreContainer">
+    <EntitySet Name="catalog_comandos_etiquetas" EntityType="EtiquetasModel.Store.catalog_comandos_etiquetas" store:Type="Tables" Schema="seguimiento_friolala" />
+  </EntityContainer>
+  <EntityType Name="catalog_comandos_etiquetas">
+    <Key>
+      <PropertyRef Name="id_comando" />
+    </Key>
+    <Property Name="id_comando" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="etiqueta" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="comando" Type="text" Nullable="false" />
+    <Property Name="imagen_etiqueta" Type="longblob" Nullable="false" />
+  </EntityType>
+</Schema>
