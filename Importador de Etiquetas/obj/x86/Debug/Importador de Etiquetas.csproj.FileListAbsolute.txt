@@ -1,9 +1,9 @@
+G:\Github\SubirEtiquetasAlSistema\Importador de Etiquetas\bin\Debug\Importador de Etiquetas.exe.config
 G:\Github\SubirEtiquetasAlSistema\Importador de Etiquetas\bin\Debug\Importador de Etiquetas.exe
 G:\Github\SubirEtiquetasAlSistema\Importador de Etiquetas\bin\Debug\Importador de Etiquetas.pdb
+G:\Github\SubirEtiquetasAlSistema\Importador de Etiquetas\obj\x86\Debug\Importador_de_Etiquetas.GUIs.FrmConfiguracion.resources
+G:\Github\SubirEtiquetasAlSistema\Importador de Etiquetas\obj\x86\Debug\Importador_de_Etiquetas.GUIs.FrmPrincipal.resources
 G:\Github\SubirEtiquetasAlSistema\Importador de Etiquetas\obj\x86\Debug\Importador_de_Etiquetas.Properties.Resources.resources
 G:\Github\SubirEtiquetasAlSistema\Importador de Etiquetas\obj\x86\Debug\Importador de Etiquetas.csproj.GenerateResource.Cache
 G:\Github\SubirEtiquetasAlSistema\Importador de Etiquetas\obj\x86\Debug\Importador de Etiquetas.exe
 G:\Github\SubirEtiquetasAlSistema\Importador de Etiquetas\obj\x86\Debug\Importador de Etiquetas.pdb
-G:\Github\SubirEtiquetasAlSistema\Importador de Etiquetas\bin\Debug\Importador de Etiquetas.exe.config
-G:\Github\SubirEtiquetasAlSistema\Importador de Etiquetas\obj\x86\Debug\Importador_de_Etiquetas.GUIs.FrmConfiguracion.resources
-G:\Github\SubirEtiquetasAlSistema\Importador de Etiquetas\obj\x86\Debug\Importador_de_Etiquetas.GUIs.FrmPrincipal.resources
